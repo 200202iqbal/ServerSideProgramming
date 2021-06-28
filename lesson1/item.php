@@ -60,4 +60,12 @@
     $hp = 10;
     $is_equal = ($hp == 20);
     var_dump($is_equal);
+    
+    $hp = 5;
+    $is_under = ($hp < 10);
+    var_dump($is_under);
+
+    $hp = 15;
+    $is_over = ($hp < 10);
+    var_dump($is_over);
 
