@@ -10,8 +10,8 @@ for ($i = 1; $i <= 100; $i++)
 echo $sum;
 
 //年のArray (配列)
-$years = [2021,2020,2019,2018,2017];
-
+//$years = [2021,2020,2019,2018,2017];
+$years = range(2021,2000);
 $fruits = ["apple","orange","peach","banana"];
 
 ?>
@@ -67,7 +67,6 @@ $fruits = ["apple","orange","peach","banana"];
     </ul>
     <ul>
         <?php foreach($years as $year):?>
-        <option value="<? $year ?>"> <?= $year?> </option>
         <?php endforeach ?>
     </ul>
 
