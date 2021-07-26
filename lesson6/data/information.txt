@@ -1,0 +1,3 @@
+SuperUser
+username=admin
+password=admin

@@ -1,6 +1,6 @@
 <?php
 //ユーザ情報の初期化(initialize)
-
+session_start();
 $user = [
     "name" => "",
     "email" => "",
@@ -11,7 +11,9 @@ $user = [
 $gender = ["male" => "男性", "female" => "女性"];
 //POST データを受け取ったら$userにいれる
 if (!empty($_POST)){
+    //POSTデータを受け取ったら$user
     $user = $_POST;
+    $_SESSION["user"] = $user;
     //$strBirthday = $user["year"]."年".$user["month"]."月".$user["day"]."日";
     $year = (int) $user["year"];
     $month = (int) $user["month"];
